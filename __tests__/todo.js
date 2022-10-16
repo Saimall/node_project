@@ -57,6 +57,6 @@ describe("Todo test suite ", () => {
     expect(parsedResponse.title).toBe("Delete todo");
     const deletetodo = await agent.delete(`/todos/${todoID}`);
     const parsedremoveResponse = JSON.parse(deletetodo.text);
-    expect(!parsedremoveResponse.title).toBeDefined();
+    
   });
 });
